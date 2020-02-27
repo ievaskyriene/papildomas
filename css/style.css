@@ -1,0 +1,128 @@
+.container{
+    display: inline-block;
+    width: 100%;
+    padding: 80px 0;
+}
+
+    .container.hero{
+        background-image: url(../img/background-n.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .container.content{
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    .container.footer {
+        background-color: #3366ff;
+        padding-top: 10px;    
+}
+
+    .container > .hero-row{
+        display: inline-block;
+        width: 600px;
+        text-align: center;
+    }
+
+.hero-row > .logo {
+    display: inline-block;
+    margin-bottom: 40px;
+    height: 120px;
+}
+
+.hero-row > h1 > p{
+    display: inline;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+p:first-child{
+    color: brown;
+}
+
+p:nth-child(2){
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.hero-row > p {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    color: #dddddd;
+}
+
+.hero-row > .clock {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.hero-row > .mouse {
+     
+}
+
+.hero-row > p {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.emailas {
+    display: inline-block;
+    border: red solid 1px;
+    padding: 10px;
+    width: 100%; 
+}
+
+.emailas > input {
+        display: inline-block;
+        float: left;
+        font-size: 18px;
+        margin-top: ((40px - 18px) / 2);
+        background-color: transparent;
+        border: none;
+        font-weight: lighter;
+        color: #ffffff;
+    }
+
+    .emailas > .btn > a {
+    
+        display: inline-block;
+        float: right;
+        color: #ffffff;
+        font-weight: lighter;
+        text-decoration: none;
+    }
+
+
+/*main content*/
+.content h2 {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.content p {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 0;
+    color: #777777;
+}
+
+.content p > a{
+    color:red;
+    text-decoration: none;
+}

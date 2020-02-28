@@ -1,0 +1,72 @@
+.clock {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.clock .time{
+    display: inline-block;
+    float: left;
+    width: 25%;
+    color: #ffffff;
+    margin: 20px 0;
+}   
+
+.clock .time .value{
+    display: inline-block;
+    width: 100%;
+    font-size: 60px;
+    font-weight: bold;
+}  
+
+.clock .time .label{
+    display: inline-block;
+    width: 25%;
+}   
+
+@media (max-width: 1000px){
+    .container > .row {
+        width: 800px;
+        margin-left: calc(50% - 400px);
+        background-color: blueviolet;
+    }
+}
+
+@media (max-width: 900px) {
+    .container > .row {
+        width: 600px;
+        margin-left: calc(50% - 300px);
+        background-color: blueviolet;
+    }
+}
+
+@media (max-width: 700px){
+
+    .container > .row,
+    .container > .hero-row {
+        width: 600px;
+        padding-right: 20px;
+        padding-left: 0px;
+    }
+
+    .container > .row > .left{ 
+        float: left;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .container > .row > .right {
+        float: right;
+        width: 100%;
+    }
+
+    .clock > .time {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .clock > .time:nth-of-type(3)
+    .clock > .time:nth-of-type(4) {
+        margin-bottom: 0;
+    }
+}

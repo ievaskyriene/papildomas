@@ -15,7 +15,8 @@
 
     .container.content{
         background-color: #ffffff;
-        padding: 20px;
+        padding: 60px 80px;
+        text-align: center;
     }
 
     .container.footer {
@@ -106,24 +107,108 @@ p:nth-child(2){
 
 
 /*main content*/
-.content h2 {
+.content-header {
     display: inline-block;
-    width: 100%;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 20px;
+    width: 500px;
+    padding-bottom: 40px;
+    position: relative;
 }
 
-.content p {
-    display: inline-block;
-    width: 100%;
-    font-size: 16px;
-    line-height: 20px;
-    margin: 20px 0;
-    color: #777777;
-}
+        .content-header > h2 > p {
+            display: inline;
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 34px;
+            font-weight: lighter;
+            color: black;
+        }
 
-.content p > a{
-    color:red;
-    text-decoration: none;
-}
+            h2 > p:last-child{
+                font-weight: bold;
+            }
+
+        .content p {
+            display: inline-block;
+            width: 100%;
+            font-size: 23px;
+            line-height: 35px;
+            margin: 20px 0;
+            color: #777777;
+            font-weight: lighter;
+        }
+
+        span {
+            display: inline-block;
+            width: 100px;
+            border: coral solid 1px;  
+            margin-top: 20px;
+        }
+
+    .content-row {
+        display: inline-block;
+    }
+
+        .content-column {
+            display: inline-block;
+            width: 30%;
+            float: left;
+            margin: 0 10px;
+
+        }
+
+            h3 {
+                font-size: 18px;
+                font-weight: normal;
+            }
+
+            .content-column > p {
+                font-size: 15px;
+                line-height: 20px;
+                text-align: justify;
+            }
+
+            .ikona {
+                display: inline-block;
+                color: coral;
+                border: coral solid 1px;
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                margin-bottom: 30px;
+                background-color: #ffffff;
+            }
+
+            .ikona:hover {
+                background-color: coral;
+
+            }
+
+                i {
+                    display: inline-block;
+                    font-size: 60px;
+                    color: coral;
+                    margin-top:45px;
+                    
+                }
+
+                i:hover{
+                    animation: ikonele 1s;
+                    animation-iteration-count: 1;
+                   
+                    color: #ffffff;
+                }
+
+            
+            @keyframes ikonele {
+                0%{
+                    margin-top: 45px;
+                }
+
+                50%{
+                    margin-top: 0;
+                }
+                100% {
+                    margin-top: 90px;
+                }
+            
+                }

@@ -3,6 +3,7 @@
     width: 100%;
     padding: 80px 0;
     text-align: center;
+   
 }
 
     .container.hero{
@@ -128,7 +129,7 @@ p:nth-child(2){
                 font-weight: bold;
             }
 
-        .content p {
+        .content-header > p {
             display: inline-block;
             width: 100%;
             font-size: 23px;
@@ -147,6 +148,11 @@ p:nth-child(2){
 
     .content-row {
         display: inline-block;
+        width: 1100px;
+      
+       
+        
+       
     }
 
         .content-column {
@@ -163,9 +169,12 @@ p:nth-child(2){
             }
 
             .content-column > p {
-                font-size: 15px;
+                font-size: 17px;
                 line-height: 20px;
                 text-align: justify;
+                color: grey;
+                padding: 20px;
+                font-weight: lighter;
             }
 
             .ikona {
@@ -287,11 +296,39 @@ p:nth-child(2){
             padding-top: 10px;
         }
 
+    .content-row > .btn{
+            display: inline-block;
+            background-color:coral;
+            width: 120px;
+            font-size: 17px;
+            padding: 15px 5px;
+            text-transform: capitalize;
+            margin-top: 50px;
+            float: left;
+            transform: translateX(-50%);
+            border-radius: 3px;
+          
+            
+            }
+
+            .btn >  a{
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+           input:focus {
+            outline: none;
+                border: coral solid 2px;
+            }
+
+            .map {
+                background-image: url(../img/map.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 550px;
+
+            }
     
         /*Form */
 
-        .container > .form {
-            background-color: #fff;
-        }
-
-       
+        

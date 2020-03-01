@@ -194,6 +194,7 @@ p:nth-child(2){
 
                 .ikona:hover i {
                     animation: ikonele 500ms;
+                    animation-fill-mode: forwards;
                     animation-iteration-count: 1;
                 
                 }
@@ -223,11 +224,13 @@ p:nth-child(2){
 
             .ikona:hover {
                 animation: pagrindas 500ms;
+                animation-fill-mode: forwards;
           }
 
             @keyframes pagrindas {
-               from {background-color: white}
+               from {background-color: white;}
                to {background-color: coral;}
+             
             }
 
 

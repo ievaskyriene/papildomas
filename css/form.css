@@ -1,0 +1,43 @@
+.container > .form {
+    display: inline-block;
+    background-color: #fff;
+}
+
+    .form > .left {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        padding-right: 20px;
+    }
+
+        .left > input,
+        .right > input {
+            display: inline-block;
+            font-size: 20px;
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 10px;
+            text-transform: capitalize;
+            font-weight: lighter;
+        }
+            input:last-of-type {
+                margin-bottom: 0;
+            }
+
+        .form > .right {
+            display: inline-block;
+            width: 50%;
+            float: right;
+        }   
+
+        .right > input {
+            display: inline-block;
+            font-size: 20px;
+            width: 100%;
+            padding-bottom: 150px;
+            text-transform: capitalize;
+            font-weight: lighter;
+        }
+
+    
+

@@ -11,7 +11,7 @@
     }
 
         .left > input,
-        .right > input {
+        textarea {
             display: inline-block;
             font-size: 20px;
             width: 100%;
@@ -39,5 +39,11 @@
             font-weight: lighter;
         }
 
+        textarea
+         {
+            min-height: 100px;
+            max-height: 400px;
+            resize: vertical;
+        }
     
 

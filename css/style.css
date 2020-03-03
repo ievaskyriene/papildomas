@@ -248,11 +248,16 @@ p:nth-child(2){
             }
 
             .ikona:hover {
+ HEAD
                 animation: pagrindas 5000ms;
                 animation-fill-mode: forwards;
                 transition-property: background-color;
                 transition-duration: 5s;
                 transition-timing-function: ease-out;
+
+                animation: pagrindas 500ms;
+                animation-fill-mode: forwards;
+
           }
 
             @keyframes pagrindas {

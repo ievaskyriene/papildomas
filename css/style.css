@@ -1,31 +1,27 @@
-.container{
+.container{ 
     display: inline-block;
     width: 100%;
     text-align: center;
-   
 }
 
-    .container.hero{
+.container.hero {
+        width: 100%;
+        background-color: darkgray;
         background-image: url(../img/background-n.jpg);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: cover;
-        padding: 80px 20px;
+        padding-top: 80px ;
         text-align: center;
     }
 
-    .container.content{
+    .container.content {
         background-color: #ffffff;
         padding: 60px 80px;
-      
     }
 
-    .container.footer {
-        background-color: #3366ff;
-        padding-top: 10px;    
-}
 
-    .container > .hero-row{
+    .container > .hero-row {
         display: inline-block;
         width: 600px;
         text-align: center;
@@ -81,9 +77,14 @@ p:nth-child(2){
 
 .emailas {
     display: inline-block;
-    border: red solid 1px;
+    border: grey solid 1px;
     padding: 10px;
     width: 100%; 
+}
+
+.emailas :focus {
+    border: rgb(110, 26, 26) solid 1px;
+
 }
 
 .emailas > input {
@@ -106,13 +107,34 @@ p:nth-child(2){
         text-decoration: none;
     }
 
+    .emailas > .btn > a:hover {
+        color: red;
+    }
+
+    @media (max-width: 900px){
+        .hero{
+            width: 100%;
+            text-align: center;
+           
+        }
+
+    }
+
+    @media (max-width: 600px){
+        .hero{
+            width: 100%;
+            text-align: center;
+           
+        }
+
+    }
+
 
 /*main content*/
 .content-header {
     display: inline-block;
     width: 500px;
     padding-bottom: 40px;
-    position: relative;
 }
 
         .content-header > h2 > p {
@@ -141,15 +163,15 @@ p:nth-child(2){
         span {
             display: inline-block;
             width: 100px;
-            border: coral solid 1px;  
+            border: #ff5744 solid 1px;  
             margin-top: 20px;
         }
 
     .content-row {
         display: inline-block;
-        width: 1100px;
         padding-top: 80px;
         padding-bottom: 80px;
+       
        
     }
 
@@ -158,7 +180,6 @@ p:nth-child(2){
             width: 30%;
             float: left;
             margin: 0 10px;
-
         }
 
             h3 {
@@ -177,19 +198,23 @@ p:nth-child(2){
 
             .ikona {
                 display: inline-block;
-                border: coral solid 1px;
+                border: #ff5744 solid 1px;
                 border-radius: 50%;
                 width: 150px;
                 height: 150px;
                 margin-bottom: 30px;
                 background-color: #ffffff;
+                transition-property: background-color;
+                transition-duration: 5s;
+                transition-timing-function: ease-out;
             }
 
                 .ikona i {
                     display: inline-block;
                     font-size: 60px;
-                    color: coral;
+                    color: #ff5744;
                     margin-top:45px;
+                    
                 }
 
                 .ikona:hover i {
@@ -202,11 +227,11 @@ p:nth-child(2){
             @keyframes ikonele {
                 0%{
                     margin-top: 45px;
-                    color: coral;
+                    color: #ff5744;
                 }
                 25% {
                     margin-top: 0;
-                    color: coral;
+                    color: #ff5744;
                     opacity: 0;
                 }
 
@@ -223,13 +248,22 @@ p:nth-child(2){
             }
 
             .ikona:hover {
+ HEAD
+                animation: pagrindas 5000ms;
+                animation-fill-mode: forwards;
+                transition-property: background-color;
+                transition-duration: 5s;
+                transition-timing-function: ease-out;
+
                 animation: pagrindas 500ms;
                 animation-fill-mode: forwards;
+
           }
 
             @keyframes pagrindas {
                from {background-color: white;}
-               to {background-color: coral;}
+               to {background-color: #ff5744;}
+              
              
             }
 
@@ -238,6 +272,7 @@ p:nth-child(2){
         display: inline-block;
         background-image: url(../img/contact-info.jpg);
         background-attachment: fixed;
+        background-repeat: no-repeat;
         }
 
         .Contact-form > .contact-form-row {
@@ -251,12 +286,13 @@ p:nth-child(2){
 
         .phone {
             display: inline-block;
-           width: 90%;
+            width: 90%;
             color: #ffffff;
+            padding: 10px;
             font-size: 45px;
             font-weight: lighter;
             background: #777777;
-            opacity: 0.2;
+            background-color:#bbb4;
         }
 
         .phone > i {
@@ -300,19 +336,29 @@ p:nth-child(2){
             padding-top: 10px;
         }
 
-    .content-row > .btn{
+        .container .form {
+            position: relative;
+        }  
+
+        .content-row .form {
+            margin-bottom: 20px;
+        }
+        
+    .form .btn{
             display: inline-block;
-            background-color:coral;
+            background-color:#ff5744;
             width: 120px;
             font-size: 17px;
             padding: 15px 5px;
             text-transform: capitalize;
             margin-top: 50px;
+             
             float: left;
-            transform: translateX(-50%);
             border-radius: 3px;
-          
+            position: absolute;
+            bottom: 50px;
             
+         
             }
 
             .btn >  a{
@@ -320,21 +366,16 @@ p:nth-child(2){
                 text-decoration: none;
             }
 
-           input:focus {
+            input:focus {
             outline: none;
-                border: coral solid 2px;
+                border: #ff5744 solid 2px;
             }
 
-            .map {
-                background-image: url(../img/map.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 550px;
-            }
+            
     
             .btnr > a > i {
                 color: #fff;
-                background-color: coral;
+                background-color: #ff5744;
                 font-size: 30px;
                 padding: 13px 20px;
                 border-radius: 50px;
@@ -390,4 +431,80 @@ p:nth-child(2){
                     padding: 10px;
                     color: #bbbbbb;
                 }
+
+@media (max-width: 1100px)  {
+    .content-column {
+        display: inline-block;
+        width: 30%;
+        float: left;
+        margin: 0 5px;
+    }
+
+    h3 {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .content-column > p {
+        font-size: 13px;
+        line-height: 20px;
+        text-align: justify;
+        color: grey;
+        padding: 10px;
+        font-weight: lighter;
+    }
+}
+
+@media (max-width: 900px)  {
+
+    .content-column {
+        display: inline-block;
+        width: 30%;
+        float: left;
+        margin: 0 5px;
+    }
+
+        h3 {
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .content-column > p {
+            font-size: 13px;
+            line-height: 20px;
+            text-align: justify;
+            color: grey;
+            padding: 20px;
+            font-weight: lighter;
+        }
+
+        .ikona {
+            display: inline-block;
+            border: #ff5744 solid 1px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            transition-property: background-color;
+            transition-duration: 5000ms;
+            transition-timing-function: ease-out;
+        }
+
+            .ikona i {
+                display: inline-block;
+                font-size: 60px;
+                color: #ff5744;
+                margin-top:45px;
+                
+            }
+
+            .ikona:hover i {
+                animation: ikonele 500ms;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+            
+            }
+
+        }
         
